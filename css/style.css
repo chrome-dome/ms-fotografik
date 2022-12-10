@@ -255,6 +255,30 @@ footer #socialIcon i{
   }
 }
 
+@media only screen and (width: 1440px){
+  
+  .prices .col.s3{
+    left: 30%;
+  }
+
+  .prices .col.s8{
+    left: 30%;
+  }
+
+}
+
+@media only screen and (width: 1366px){
+  
+  .prices .col.s3{
+    left: 28%;
+  }
+
+  .prices .col.s8{
+    left: 32%;
+  }
+
+}
+
 @media only screen and (max-width: 1024px){
   
   header nav ul li a {
@@ -333,7 +357,7 @@ footer #socialIcon i{
 
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 415px) {
 
   header .introduceText{
     bottom: 2%;
