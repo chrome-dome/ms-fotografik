@@ -32,13 +32,6 @@ header .introduceText img {
   height: 100%;
 }
 
-h1 {
-  font-size: 5em;
-  text-transform: uppercase;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  margin: 0;
-}
-
 h3 {
   font-weight: 800;
   font-size: 3.2em;
@@ -294,11 +287,8 @@ footer .responsive-img {
   }
 
   header .introduceText {
-    bottom: 5%;
-  }
-
-  h1 {
-    font-size: 4em;
+    bottom: 17%;
+    left: 6%;
   }
 
   h3 {
@@ -325,6 +315,10 @@ footer .responsive-img {
     font-size: 3rem;
   }
 
+  footer .responsive-img {
+    margin: -2vh;
+  }
+
   #contact i.fa-phone,
   #contact i.fa-envelope {
     font-size: 1.2rem;
@@ -338,10 +332,6 @@ footer .responsive-img {
 }
 
 @media only screen and (max-width: 600px) {
-
-  h1 {
-    font-size: 3em;
-  }
 
   h3 {
     font-size: 2.5em;
@@ -363,22 +353,29 @@ footer .responsive-img {
     font-size: 1.3rem;
   }
 
+  footer .responsive-img {
+    margin: 0;
+    width: 75%;
+    height: 75%;
+  }
+
 }
 
 @media only screen and (max-width: 415px) {
 
   header .introduceText {
-    bottom: 2%;
+    bottom: 12%;
     left: 5%;
-    width: 20%;
-  }
-
-  h1 {
-    font-size: 2.5em;
+    width: 25vw;
+    height: 25vw;
   }
 
   h3 {
     font-size: 2em;
+  }
+
+  header h3 {
+    font-size: 3em;
   }
 
   header .sidenav {
@@ -390,7 +387,8 @@ footer .responsive-img {
   }
 
   .socialHeader {
-    right: 2%;
+    bottom: 3%;
+    right: 3%;
   }
 
   .socialHeader a {
