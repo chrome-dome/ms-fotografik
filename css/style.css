@@ -1,16 +1,10 @@
 @font-face {
-  font-family: knowyour;
-  font-display: fallback;
-  src: url(../fonts/knowyour.ttf)
-}
-
-@font-face {
   font-family: LemonTuesday;
   font-display: fallback;
   src: url(../fonts/LemonTuesday.otf)
 }
 
-body{
+body {
   max-width: 1920px;
   margin: 0 auto;
   overflow-x: hidden;
@@ -20,51 +14,59 @@ body{
 header {
   position: relative;
   height: 100vh;
-  background-image: url(../img/mural.webp);
+  background-image: url(../img/main_img.webp);
   background-size: cover;
   background-position: center
 }
 
-header .introduceText{
+header .introduceText {
   position: absolute;
-  bottom: 10%;
-  left: 10%;
-  width: 25%;
+  bottom: 15%;
+  left: 3%;
+  width: 16vw;
+  height: 16vw;
+}
+
+header .introduceText img {
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
   font-size: 5em;
-  font-family: knowyour;
   text-transform: uppercase;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   margin: 0;
 }
 
 h3 {
+  font-weight: 800;
+  font-size: 3.2em;
+}
+
+header h3 {
   margin: 0;
-  font-family: LemonTuesday;
-  color: #ad0808;
-  font-size: 4em;
-
-}
-
-header h3{
+  margin-left: 1vw;
+  margin-top: -3vw;
   transform: rotate(-5deg);
-  animation: signatureMove 1.4s both ease-in-out
+  font-family: LemonTuesday;
+  color: #fff;
+  font-size: 3.6em;
+  animation: signatureMove 2s both ease-in-out;
 }
 
-header nav{
+header nav {
   box-shadow: none;
 }
 
-nav .nav-wrapper.container{
+nav .nav-wrapper.container {
   width: 100%;
   margin-right: 3rem;
 }
 
-header nav i.material-icons{
+header nav i.material-icons {
   font-size: 3.5em;
-  color: #c6c6c6;
+  color: #fff;
 }
 
 header nav ul li a {
@@ -72,34 +74,34 @@ header nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.4rem;
-  color: #c6c6c6;
+  color: #fff;
   transition: .4s linear
 }
 
 nav ul.hide-on-med-and-down li a:hover {
-  border-bottom: 1px solid #c20909;
+  border-bottom: 1px solid #ee6e73;
   transform: translateX(10%)
 }
 
-header .sidenav{
+header .sidenav {
   width: 30%;
   opacity: 50%;
 }
 
-header .sidenav a{
+header .sidenav a {
   font-size: 1.4rem;
   padding: 2rem 0;
 }
 
-.socialHeader{
+.socialHeader {
   position: absolute;
   bottom: 5%;
   right: 5%;
 }
 
-.socialHeader a{
+.socialHeader a {
   display: block;
-  color: #c6c6c6;
+  color: #fff;
   padding: 2rem;
   transition: .4s linear;
 }
@@ -108,7 +110,7 @@ header .sidenav a{
   color: #ee6e73;
 }
 
-.socialHeader i{
+.socialHeader i {
   font-size: 5rem;
 }
 
@@ -140,19 +142,19 @@ header .arrowScrollTop.active {
   cursor: pointer
 }
 
-section.scroll h3{
+section.scroll h3 {
   margin: 1em;
 }
 
-section.scroll .text{
+section.scroll .text {
   margin-top: 10%;
 }
 
-#offer blockquote.last{
+#offer blockquote.last {
   margin-top: 25%;
 }
 
-section.scroll .picture{
+section.scroll .picture {
   position: relative;
 }
 
@@ -164,6 +166,7 @@ article.picture .fas {
   color: #fff;
   transition: .3s linear
 }
+
 article.picture .fas:hover {
   color: #ee6e73;
 
@@ -191,46 +194,50 @@ section.scroll .text .author {
 
 article.videoResume,
 article.prices,
-article.aboutWrapper{
+article.aboutWrapper {
   width: 100%;
   background-color: #000;
 }
 
-article.videoResume iframe{
+article.videoResume iframe {
   padding: 2rem;
 }
 
 article.prices h3,
-section#about h3{
+section#about h3 {
   margin: 1em;
 }
 
-article.prices h6{
+article.prices h6 {
   margin: .5em;
 }
 
-div.container.additionalInfo{
+div.container.additionalInfo {
   width: 50%;
   margin-top: 4em;
   margin-bottom: 4em;
 }
 
-.additionalInfo{
+.additionalInfo {
   margin-bottom: 2em;
 }
 
-.insetShadow img{
+.insetShadow img {
   border-radius: 5px;
   opacity: .7;
 }
 
-footer #socialIcon i{
+footer #socialIcon i {
   margin-top: 10%;
   padding: 5px;
 }
 
+footer .responsive-img {
+  margin: -5vh;
+}
+
 #contact i.fa-phone,
-#contact i.fa-envelope{
+#contact i.fa-envelope {
   font-size: 1.3rem;
   padding: .5em 0;
   letter-spacing: 1px;
@@ -239,91 +246,92 @@ footer #socialIcon i{
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
 }
 
 @keyframes signatureMove {
   0% {
-      filter: grayscale(100%);
-      opacity: 0
+    filter: grayscale(100%);
+    opacity: 0
   }
 
   100% {
-      filter: grayscale(0);
-      opacity: 1
+    filter: grayscale(0);
+    opacity: 1
   }
 }
 
-@media only screen and (width: 1440px){
-  
-  .prices .col.s3{
+@media only screen and (width: 1440px) {
+
+  .prices .col.s3 {
     left: 30%;
   }
 
-  .prices .col.s8{
+  .prices .col.s8 {
     left: 30%;
   }
 
 }
 
-@media only screen and (width: 1366px){
-  
-  .prices .col.s3{
+@media only screen and (width: 1366px) {
+
+  .prices .col.s3 {
     left: 28%;
   }
 
-  .prices .col.s8{
+  .prices .col.s8 {
     left: 32%;
   }
 
 }
 
-@media only screen and (max-width: 1024px){
-  
+@media only screen and (max-width: 1024px) {
+
   header nav ul li a {
     padding: 0 1em;
   }
 
-  header .introduceText{
+  header .introduceText {
     bottom: 5%;
   }
-  
+
   h1 {
     font-size: 4em;
   }
-  
+
   h3 {
     font-size: 3em;
   }
 
-  .arrowScrollTop{
+  .arrowScrollTop {
     display: none;
   }
 
-  .socialHeader i{
+  .socialHeader i {
     font-size: 4.5rem;
   }
 
-  section.scroll .text{
+  section.scroll .text {
     margin-top: 0;
   }
 
-  div.container.additionalInfo{
+  div.container.additionalInfo {
     width: 70%;
   }
 
-  footer #socialIcon i{
+  footer #socialIcon i {
     font-size: 3rem;
   }
-  
+
   #contact i.fa-phone,
-  #contact i.fa-envelope{
+  #contact i.fa-envelope {
     font-size: 1.2rem;
     padding: .5em 0;
   }
 
-  #contact h4{
+  #contact h4 {
     font-size: 1.5rem;
   }
 
@@ -334,24 +342,24 @@ footer #socialIcon i{
   h1 {
     font-size: 3em;
   }
-  
+
   h3 {
     font-size: 2.5em;
   }
 
-  .socialHeader{
+  .socialHeader {
     bottom: 10%;
   }
 
-  .socialHeader a{
+  .socialHeader a {
     padding: 1rem;
   }
 
-  .socialHeader i{
+  .socialHeader i {
     font-size: 4rem;
   }
 
-  .aboutWrapper h5{
+  .aboutWrapper h5 {
     font-size: 1.3rem;
   }
 
@@ -359,7 +367,7 @@ footer #socialIcon i{
 
 @media only screen and (max-width: 415px) {
 
-  header .introduceText{
+  header .introduceText {
     bottom: 2%;
     left: 5%;
     width: 20%;
@@ -368,62 +376,62 @@ footer #socialIcon i{
   h1 {
     font-size: 2.5em;
   }
-  
+
   h3 {
     font-size: 2em;
   }
 
-  header .sidenav{
+  header .sidenav {
     width: 40%;
   }
 
-  header nav i.material-icons{
+  header nav i.material-icons {
     margin-right: -60px;
   }
 
-  .socialHeader{
+  .socialHeader {
     right: 2%;
   }
 
-  .socialHeader a{
+  .socialHeader a {
     padding: 1rem 0;
   }
 
-  .socialHeader i{
+  .socialHeader i {
     font-size: 3.5rem;
   }
 
-  div.container.additionalInfo{
+  div.container.additionalInfo {
     width: 90%;
   }
 
-  article.prices h3{
+  article.prices h3 {
     font-size: 2.5em;
   }
 
-  article.prices h5{
+  article.prices h5 {
     font-size: 1.12em;
   }
 
-  article.prices h6{
+  article.prices h6 {
     font-size: .85em;
   }
 
-  .aboutWrapper h5{
+  .aboutWrapper h5 {
     font-size: 1.1rem;
   }
 
-  footer #socialIcon i{
+  footer #socialIcon i {
     font-size: 2rem;
   }
-  
+
   #contact i.fa-phone,
-  #contact i.fa-envelope{
+  #contact i.fa-envelope {
     font-size: .9rem;
     padding: .2em 0;
   }
 
-  #contact h4{
+  #contact h4 {
     font-size: 1.2rem;
   }
 

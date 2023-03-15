@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -10,18 +10,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
     integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-  <link rel="icon" href="img/ms.png">
+  <link rel="icon" href="img/favicon.png">
   <link href="dist/css/lightbox.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1963297630729143');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1963297630729143&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 
 <body>
   <header>
     <div class="section no-pad-bot" id="index-banner">
       <div class="container introduceText">
-        <h1 class="header center white-text">Marcin Sabuk</h1>
+        <img src="/img/logo.png" alt="Marcin Sabuk Fotografik">
         <h3 class="header center col s12 light">fotografik</h3>
       </div>
     </div>
@@ -55,7 +74,7 @@
 
   <section class="container section scrollspy scroll" id="offer">
     <div class="row section reportage" id="projects">
-      <h3 class="header center col s12">reportaż ślubny</h3>
+      <h3 class="header center col s12">Reportaż ślubny</h3>
       <div class="col s12 l8 pull-l1">
         <article class="picture">
           <a data-lightbox="reportage" href="img/gallery/reportage1.webp">
@@ -72,7 +91,7 @@
       </div>
     </div>
     <div class="row section specialEvents">
-      <h3 class="header center col s12">imprezy okolicznościowe</h3>
+      <h3 class="header center col s12">Fotografia okolicznościowa</h3>
       <div class="col s12 l4 pull-l1 hide-on-med-and-down text">
         <blockquote class="quote">
           <p>"W doskonałej fotografii chodzi o głębię uczucia, nie o głębię ostrości."</p>
@@ -88,8 +107,8 @@
         </article>
       </div>
     </div>
-    <div class="row section portrait">
-      <h3 class="header center col s12">portret</h3>
+    <!-- <div class="row section portrait">
+      <h3 class="header center col s12">fotografia rodzinna</h3>
       <div class="col s12 l8 pull-l1">
         <article class="picture">
           <a data-lightbox="portrait" href="img/gallery/portrait1.webp">
@@ -105,8 +124,8 @@
           <footer class="author">Henri Cartier-Bresson</footer>
         </blockquote>
       </div>
-    </div>
-    <div class="row section businessEvents">
+    </div> -->
+    <!-- <div class="row section businessEvents">
       <h3 class="header center col s12">fotografia biznesowa</h3>
       <div class="col s12 l4 pull-l1 hide-on-med-and-down text">
         <blockquote class="quote last">
@@ -123,7 +142,7 @@
           </a>
         </article>
       </div>
-    </div>
+    </div> -->
   </section>
   <section class="galleryContainer">
     <div class="images">
@@ -141,42 +160,43 @@
       <a href="img/gallery/specialEvents5.webp" data-lightbox="specialEvents"></a>
       <a href="img/gallery/specialEvents6.webp" data-lightbox="specialEvents"></a>
       <a href="img/gallery/specialEvents7.webp" data-lightbox="specialEvents"></a>
-      <a href="img/gallery/portrait2.webp" data-lightbox="portrait"></a>
+      <!-- <a href="img/gallery/portrait2.webp" data-lightbox="portrait"></a>
       <a href="img/gallery/portrait3.webp" data-lightbox="portrait"></a>
       <a href="img/gallery/portrait4.webp" data-lightbox="portrait"></a>
       <a href="img/gallery/portrait5.webp" data-lightbox="portrait"></a>
       <a href="img/gallery/portrait6.webp" data-lightbox="portrait"></a>
-      <a href="img/gallery/portrait7.webp" data-lightbox="portrait"></a>
-      <a href="img/gallery/businessEvents4.webp" data-lightbox="businessEvents"></a>
+      <a href="img/gallery/portrait7.webp" data-lightbox="portrait"></a> -->
+      <!-- <a href="img/gallery/businessEvents4.webp" data-lightbox="businessEvents"></a> -->
     </div>
   </section>
 
-  <!-- <article class="videoResume">
+  <article class="videoResume">
     <section class="container section">
       <div class="col s12 l10">
         <div class="video-container">
-          <iframe frameborder='0' height='465px' width='470px' scrolling='no' src='https://www.youtube.com/embed/soAKIx5IPQo' frameborder="0" allowfullscreen></iframe>
+          <iframe frameborder='0' height='465px' width='470px' scrolling='no'
+            src='https://www.youtube.com/watch?v=vbPifL6ipc8' frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </section>
-  </article> -->
+  </article>
 
   <article class="prices white scrollspy" id="price">
     <div class="row section">
-      <h3 class="header center col s12">cennik</h3>
+      <h3 class="header center col s12">Cennik</h3>
       <div class="col s8 push-s1 l5 push-l3 xl4 push-xl4">
         <h5>Reportaż ślubny</h5>
         <h5>Komunie, chrzciny: ceremonia</h5>
         <h5>Komunie, chrzciny: ceremonia + przyjęcie</h5>
         <h5>Zdjęcia portretowe</h5>
-        <h5>Eventy</h5>
+        <!-- <h5>Eventy</h5> -->
       </div>
       <div class="col s3 push-s1 l3 push-l3 xl4 push-xl3">
         <h5>3300 zł</h5>
         <h5>500 zł</h5>
         <h5>700 zł</h5>
         <h5>330 zł</h5>
-        <h5>1200 zł</h5>
+        <!-- <h5>1200 zł</h5> -->
       </div>
     </div>
     <div class="container col additionalInfo">
@@ -215,14 +235,14 @@
             temu powstają niepowtarzalne ujęcia. Jednocześnie bardzo mocno zwracam uwagę na aspekty techniczne - zdjęcie
             musi być zrobione idealnie!</h5>
           <br>
-          <h5 class="white-text center">Pochodzę zDolnego Śląska, a to do czegoś zobowiązuje ;)</h5>
+          <h5 class="white-text center">Pochodzę zDolnego Śląska, a to zobowiązuje ;)</h5>
           <br>
           <h5 class="white-text center">Uczyłem się w OPT Art we Wrocławiu, na kierunkach: fotografia i projektowanie
             graficzne, uczestniczyłem w licznych kursach oraz konferencjach organizowanych przez najlepszych fotografów
             w Europie. Jestem zwycięzcą konkursu na "jubileuszowe logo" Auchan Polska.</h5>
           <br>
           <h5 class="white-text center">Ciężko się rozpisywać skoro mocno wierzy się w słynne zdanie: "Jedno zdjęcie
-            mówi czasem więcej niż tysiąc słów", dlatego zapraszam do mojej podróży przez świat!</h5>
+            mówi czasem więcej niż tysiąc słów", dlatego zapraszam do mojego swiata fotografii!</h5>
           <br>
         </div>
       </div>
@@ -257,12 +277,13 @@
                 class="medium fab fa-facebook"> </i></a>
             <a class="white-text" href="https://www.instagram.com/msfotografik.pl/" target="blank"><i
                 class="medium fab fa-instagram"> </i></a>
-            <a class="white-text" href="#" target="blank"><i class="medium fab fa-youtube-square"> </i></a>
+            <a class="white-text" href="https://www.youtube.com/@msfotografik2368" target="blank"><i
+                class="medium fab fa-youtube-square"> </i></a>
           </ul>
         </div>
         <div class="col l3 s8 push-s2">
           <br>
-          <img src="img/logo/logo-oryg.png" alt="" class="responsive-img">
+          <img src="img/logo.png" alt="" class="responsive-img">
         </div>
       </div>
     </div>
