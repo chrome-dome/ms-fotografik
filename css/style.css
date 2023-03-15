@@ -21,10 +21,10 @@ header {
 
 header .introduceText {
   position: absolute;
-  bottom: 15%;
+  bottom: 9%;
   left: 3%;
-  width: 16vw;
-  height: 16vw;
+  width: 12vw;
+  height: 12vw;
 }
 
 header .introduceText img {
@@ -40,7 +40,7 @@ h3 {
 header h3 {
   margin: 0;
   margin-left: 1vw;
-  margin-top: -3vw;
+  margin-top: -2vw;
   transform: rotate(-5deg);
   font-family: LemonTuesday;
   color: #fff;
@@ -226,7 +226,9 @@ footer #socialIcon i {
 }
 
 footer .responsive-img {
-  margin: -5vh;
+  margin: -4vh;
+  width: 85%;
+  height: 85%;
 }
 
 #contact i.fa-phone,
@@ -257,6 +259,16 @@ footer .responsive-img {
 }
 
 @media only screen and (width: 1440px) {
+  header .introduceText {
+    bottom: 12%;
+    left: 5%;
+    width: 14vw;
+    height: 14vw;
+  }
+
+  header .introduceText img {
+    margin-left: 1vw;
+  }
 
   .prices .col.s3 {
     left: 30%;
@@ -266,9 +278,26 @@ footer .responsive-img {
     left: 30%;
   }
 
+  footer .responsive-img {
+    margin: -2vh;
+    width: 85%;
+    height: 85%;
+  }
+
 }
 
 @media only screen and (width: 1366px) {
+
+  header .introduceText {
+    bottom: 15%;
+    left: 5%;
+    width: 14vw;
+    height: 14vw;
+  }
+
+  header .introduceText img {
+    margin-left: 1vw;
+  }
 
   .prices .col.s3 {
     left: 28%;
@@ -276,6 +305,10 @@ footer .responsive-img {
 
   .prices .col.s8 {
     left: 32%;
+  }
+
+  footer .responsive-img {
+    margin: -2vh;
   }
 
 }
@@ -287,12 +320,26 @@ footer .responsive-img {
   }
 
   header .introduceText {
-    bottom: 17%;
-    left: 6%;
+    bottom: 20%;
+    left: 4%;
+    width: 14vw;
+    height: 14vw;
+  }
+
+  header .introduceText img {
+    margin-left: 2vw;
+    width: 17vw;
+    height: 17vw;
   }
 
   h3 {
     font-size: 3em;
+  }
+
+  header h3 {
+    margin-left: 2vw;
+    margin-top: -3vw;
+    font-size: 3.2em;
   }
 
   .arrowScrollTop {
@@ -316,7 +363,7 @@ footer .responsive-img {
   }
 
   footer .responsive-img {
-    margin: -2vh;
+    margin: -1vh;
   }
 
   #contact i.fa-phone,
@@ -331,14 +378,50 @@ footer .responsive-img {
 
 }
 
+@media only screen and (max-width: 915px) {
+
+  header .introduceText {
+    bottom: 35%;
+    left: 4%;
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .socialHeader {
+    bottom: 4%;
+    right: 4%;
+  }
+
+  footer .responsive-img {
+    margin: 0;
+    width: 40%;
+    height: 40%;
+  }
+
+}
+
 @media only screen and (max-width: 600px) {
+
+  header .introduceText {
+    bottom: 15%;
+    left: 4%;
+  }
+
+  header .introduceText img {
+    width: 21vw;
+    height: 21vw;
+  }
+
+  header h3 {
+    font-size: 2.5em;
+  }
 
   h3 {
     font-size: 2.5em;
   }
 
   .socialHeader {
-    bottom: 10%;
+    bottom: 4%;
   }
 
   .socialHeader a {
@@ -355,8 +438,8 @@ footer .responsive-img {
 
   footer .responsive-img {
     margin: 0;
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 50%;
   }
 
 }
@@ -364,8 +447,15 @@ footer .responsive-img {
 @media only screen and (max-width: 415px) {
 
   header .introduceText {
-    bottom: 12%;
+    bottom: 10%;
     left: 5%;
+    width: 25vw;
+    height: 25vw;
+  }
+
+
+  header .introduceText img {
+    margin-left: 6vw;
     width: 25vw;
     height: 25vw;
   }
@@ -375,7 +465,8 @@ footer .responsive-img {
   }
 
   header h3 {
-    font-size: 3em;
+    margin-top: -4vw;
+    font-size: 2.5em;
   }
 
   header .sidenav {
@@ -431,6 +522,24 @@ footer .responsive-img {
 
   #contact h4 {
     font-size: 1.2rem;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+  header .introduceText {
+    bottom: 15%;
+  }
+
+  header .introduceText img {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  header h3 {
+    margin-top: -6vw;
+    font-size: 2.5em;
   }
 
 }
